@@ -7,8 +7,7 @@ public class NumeroPrimo {
 		Scanner t = new Scanner(System.in);
 		int numero1, numero2;
 		boolean esPrimo;
-		System.out.print("Introduzca primer numero: ");
-		numero1 = t.nextInt();
+		numero1 = introducirNumero(t);
 		System.out.print("Introduzca segundo numero: ");
 		numero2 = t.nextInt();
 		int mayor, menor;
@@ -30,5 +29,12 @@ public class NumeroPrimo {
 				System.out.println(i + " ");
 			}
 		}
+	}
+
+	private static int introducirNumero(Scanner t) {
+		int numero1;
+		System.out.print("Introduzca primer numero: ");
+		numero1 = t.nextInt();
+		return numero1;
 	}
 }
